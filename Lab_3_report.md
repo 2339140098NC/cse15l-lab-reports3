@@ -22,3 +22,27 @@ public void testReverseInPlace() {
 
 -The symptom, as the output of running the tests: 
 ![img]()
+
+- Code before change:
+```
+static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+}
+```
+
+- Code after change:
+```
+  static void reverseInPlace(int[] arr) {
+    int left = 0;
+    int right = arr.length - 1;
+    while(left < right){
+      int temp = arr[left];
+      arr[left] = arr[right];
+      arr[right] = temp;
+      left++;
+      right--;
+    }
+  }
+```
