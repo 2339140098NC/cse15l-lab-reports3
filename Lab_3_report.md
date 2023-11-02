@@ -21,3 +21,4 @@ public void testReverseInPlace() {
 ```
 
 -The symptom, as the output of running the tests: 
+![img]()
