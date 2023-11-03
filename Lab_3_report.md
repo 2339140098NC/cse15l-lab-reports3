@@ -46,3 +46,7 @@ static void reverseInPlace(int[] arr) {
   }
 }
 ```
+- Why does the fix address the issue?
+   - The issue of the original implementation is: If we have [1,2,3,4,5], the output of it is [5,4,3,4,5], which is wrongly overwriting, and while iterating, the original value have lost.
+   - The fix addresses this issue, letting one variable to iterate from the beginning and the other one from the back, meet at the middle.
+   - It swaps elements during each iteration.
