@@ -58,7 +58,7 @@ NealC@LAPTOP-R81VOUDE MINGW64 /d/java_code/docsearch (main)
 $ grep -v ".txt" find-results.txt
 technical/biomed
 ```
-for example: in this case, it only shows you the lines that doesn't have ".txt", which is technical/biomed. Prints lines not matching criteria (inverse search)
+For example: in this case, it only shows you the lines that doesn't have ".txt", which is technical/biomed. Prints lines not matching criteria (inverse search)
 
   2. grep -c
 ```
@@ -66,3 +66,6 @@ NealC@LAPTOP-R81VOUDE MINGW64 /d/java_code/docsearch (main)
 $ grep -v -c ".txt" find-results.txt 
 1
 ```
+Prints count of lines with matching criteria. In this case, only **1** line doesn't have".txt", so it prints 1.
+
+
